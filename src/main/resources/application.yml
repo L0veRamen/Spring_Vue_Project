@@ -1,0 +1,37 @@
+server:
+  port: 9090
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jc
+    hikari:
+      username: root
+      password: root123
+
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java #reboot path
+      exclude: WEB-INF/**
+
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml  # scan mybatis all xml files
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: com.jc666.springboot.entity
+  mapper-locations: classpath:/mapper/*.xml
+
+files:
+  upload:
+    path: C:/Users/chenq/OneDrive/Desktop/Spring_Vue_Project/files/
+
+
+
+
