@@ -1,5 +1,5 @@
 # Spring_Vue_Project
-This is Spring + Vue studenProject
+This is Spring + Vue Project.
 
 Screen shots:
 
